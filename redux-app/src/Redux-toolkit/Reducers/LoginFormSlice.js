@@ -37,7 +37,7 @@ export const LoginFormSlice = createSlice({
       console.log(user)
         if(user){
           console.log("user",user)
-          state.presentState.user = user.username
+          state.presentState.user = user.username;
           state.presentState.isAuthenticated=true
           state.presentState.error = null
         }else{
